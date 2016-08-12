@@ -53,3 +53,4 @@ Use the Docker containerizer if you need specific features of the Docker package
       }
     }
 
+[Learn more about launching containers on Marathon](http://mesosphere.github.io/marathon/docs/native-docker.html).
