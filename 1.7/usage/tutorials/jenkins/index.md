@@ -69,14 +69,14 @@ as NFS, CIFS, and so on.
 
 If you only want to run Jenkins in a development environment, it's trivial
 to pin it to a single agent in the DC/OS cluster. Create the file
-`options.json` with the configuration below, modifying
-`storage.pinned-hostname` to correspond to an agent IP in your DC/OS cluster:
+`options.json` with the configuration below, modifying `pinned-hostname`
+to correspond to an agent IP in your DC/OS cluster:
 
 ```bash
 $ cat options.json
 {
-    "jenkins": {
-        "storage.pinned-hostname": "10.100.100.88"
+    "storage": {
+        "pinned-hostname": "10.100.100.88"
     }
 }
 ```
